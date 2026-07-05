@@ -40,11 +40,11 @@ Login-Register/
 
 ### Login Page
 
-![Login Page](screenshots/login.png)
+![Login Page](screen_shots/login.png)
 
 ### Register Page
 
-![Register Page](screenshots/register.png)
+![Register Page](screen_shots/register.png)
 
 ---
 
