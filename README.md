@@ -25,20 +25,26 @@ A simple and responsive **Login & Register** user interface built using **HTML5*
 
 ## 📂 Project Structure
 
-```
 Login-Register/
 │── login.html
 │── register.html
 │── style.css
-└── README.md
-```
+│── README.md
+└── screenshots/
+    ├── login.png
+    └── register.png
 
 ---
 
 ## 📸 Pages
 
-- Login Page
-- Register Page
+### Login Page
+
+![Login Page](screenshots/login.png)
+
+### Register Page
+
+![Register Page](screenshots/register.png)
 
 ---
 
