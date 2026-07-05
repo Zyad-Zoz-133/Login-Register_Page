@@ -1,0 +1,123 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #001116 ;
+      height: 100vh;
+}
+
+.container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 3px solid #0077B6;
+      border-radius: 15px;
+      background-color: #00161d;
+      width: 250px;
+      height:fit-content ;
+      /* padding: 10px; */
+      padding:30px 10px;
+      box-shadow: 2px 8px 24px rgba(0, 180, 216, 0.3);
+      position: relative;
+      overflow: hidden;
+}
+
+.container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -150%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(to right,
+                  rgba(255, 255, 255, 0) 0%,
+                  rgba(255, 255, 255, 0.13) 50%,
+                  rgba(255, 255, 255, 0) 100%);
+      transform: skewX(-25deg);
+      animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+      0% {
+            left: 150%;
+      }
+
+      30% {
+            left: -150%;
+      }
+
+      100% {
+            left: -150%;
+      }
+
+}
+
+h3{
+      color: #007EA7;
+      font-size: x-large;
+}
+
+.container form div {
+      margin: 4px;
+      padding: 5px;
+}
+
+form{
+      display: flex;
+      flex-direction: column;
+}        
+
+
+form input {
+      height: 25px;
+      margin-top: 3px;
+      padding: 5px;
+      color: #13637e;
+      background-color:#00161d;
+      border: 1px solid #0077B6 ;
+      box-shadow: 2px 8px 24px rgba(0, 180, 216, 0.3);
+      border-radius: 5px;
+      transition: all 0.4 ease-in;
+      
+}
+
+form input:hover{
+      background-color: #00222b ;
+      scale: 1.05;
+}
+
+form div label{
+     color: #0077B6;
+}
+
+form .button{
+      color: #0077B6;
+      align-self: center;
+      width: 60px;
+      transition: all 0.4 ease-in;
+}
+
+form .button:hover{
+      background-color: #00222b;
+      scale: 1.09;
+}
+
+a{
+      text-decoration: none;
+      font-size: x-small;
+      color: #0077B6;
+      transition: all 0.3s;
+      text-transform: capitalize;
+}
+
+a:hover{
+      text-decoration: underline;
+      scale: 1.09;
+}
